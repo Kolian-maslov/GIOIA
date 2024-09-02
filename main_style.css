@@ -1,0 +1,249 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1920px;
+    justify-content: space-between;
+    margin: 20px 60px;
+    text-decoration: none;
+    user-select: none;
+}
+
+.Logo_header {
+    max-width: 300px;
+}
+
+.header_text {
+    font-family: "EB Garamond", serif;
+    font-size: 32px;
+    font-weight: 400px;
+    color: var(--black);
+}
+
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1920px;
+    padding: 0px 0px;
+    background: #fff;
+    font-family: "EB Garamond", serif;
+    text-decoration: none;
+    user-select: none;
+
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 60px;
+}
+
+.Footer_inf {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+:root {
+    --green: #04b10b;
+    --black: #000;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 400;
+
+}
+
+h2 {
+    font-family: "EB Garamond", serif;
+    font-size: 20px;
+    line-height: 1.25;
+    font-weight: 400;
+    margin: 0px;
+    color: var(--black);
+
+}
+
+h3 {
+    font-family: "EB Garamond", serif;
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 400;
+    margin: 0px;
+    color: var(--black);
+
+}
+
+.Photo_full_screen {
+    display: flex;
+    max-width: 1920px;
+    max-height: 700px;
+    margin: 40px 60px;
+}
+
+
+
+.ABOUT_US {
+    text-align: center;
+    margin: 40px 240px;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 390px) {
+    header {
+        margin: 10px 20px;
+    }
+
+    .Logo_header {
+        min-width: 100px;
+    }
+
+    .header_text {
+        font-size: 16px;
+    }
+
+    .ABOUT_US {
+        margin: 40px 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 16px;
+        line-height: 1.25;
+
+
+    }
+
+    h3 {
+        font-size: 14px;
+        line-height: 1.25;
+    }
+
+    footer {
+        display: block;
+        gap: 20px;
+        justify-content: space-between;
+        margin: 40px 20px;
+    }
+
+    .Photo_full_screen {
+        max-height: 900px;
+        margin: 40px 20px;
+    }
+}
+
+
+@media screen and (min-width: 390px) {
+    header {
+        margin: 10px 20px;
+    }
+
+    .Logo_header {
+        min-width: 100px;
+    }
+
+    .header_text {
+        font-size: 16px;
+    }
+
+    .ABOUT_US {
+        margin: 40px 20px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h3 {
+        font-size: 14px;
+        line-height: 1.25;
+    }
+
+
+    footer {
+       flex-direction: column;
+        gap: 20px;
+        justify-content: space-between;
+        margin: 40px 20px;
+    }
+
+
+    .Photo_full_screen {
+        max-height: 900px;
+        margin: 40px 20px;
+    }
+
+}
+
+
+@media screen and (min-width: 600px) {
+    .header_text {
+        font-size: 32px;
+    }
+
+    .ABOUT_US {
+        margin: 40px 60px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+        line-height: 1.25;
+
+
+    }
+
+    h3 {
+        font-size: 16px;
+        line-height: 1.25;
+    }
+
+    footer {
+        flex-direction: row;
+         gap: 20px;
+         justify-content: space-between;
+         margin: 40px 60px;
+     }
+}
+
+
+@media screen and (min-width: 768px) {
+    .ABOUT_US {
+        margin: 40px 60px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+}
+
+
+@media screen and (min-width: 992px) {}
+
+
+@media screen and (min-width: 1200px) {}
+
+
+@media screen and (min-width: 1400px) {}
+
+
+@media screen and (min-width: 1900px) {}

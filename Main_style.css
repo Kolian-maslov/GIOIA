@@ -1,0 +1,317 @@
+header {
+    display: flex;
+    align-items: center;
+    max-width: 1920px;
+    justify-content: space-between;
+    margin: 20px 0px;
+    text-decoration: none;
+    user-select: none;
+    cursor: none;
+    margin: 0px 40px;
+}
+
+
+
+.Logo_header {
+    max-width: 300px;
+}
+
+.header_text {
+    font-family: "EB Garamond", serif;
+    font-size: 32px;
+    font-weight: 400px;
+    color: var(--black);
+}
+
+.custom-cursor {
+  width: 20px;
+  height: 20px;
+  background: white;
+  border-radius: 50%;
+
+  position: fixed;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+
+  mix-blend-mode: difference;
+  z-index: 9999;
+
+  transition: transform 0.15s ease;
+}
+
+/* состояние при клике */
+.custom-cursor.active {
+  transform: translate(-50%, -50%) scale(2);
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1920px;
+    padding: 0px 0px;
+    background: #fff;
+    font-family: "EB Garamond", serif;
+    text-decoration: none;
+    user-select: none;
+    cursor: none;
+    
+
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 60px;
+}
+
+.Footer_inf {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+:root {
+    --green: #04b10b;
+    --black: #000;
+}
+
+a {
+    text-decoration: none;
+}
+a, a * {
+    cursor: none !important;
+}
+
+button{
+    cursor: none !important;
+}
+
+h1 {
+   
+    font-weight: 400;
+    font-size: clamp(24px, 4vw, 32px);
+
+}
+
+h2 {
+    font-family: "EB Garamond", serif;
+    font-size: 20px;
+    line-height: 1.25;
+    font-weight: 400;
+    margin: 0px;
+    color: var(--black);
+
+}
+
+h3 {
+    font-family: "EB Garamond", serif;
+    font-size: 16px;
+    line-height: 1.25;
+    font-weight: 400;
+    margin: 0px;
+    color: var(--black);
+
+}
+
+
+
+
+
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.main-block {
+    z-index: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.blocks {
+    display: flex;
+    scroll-snap-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+.Photo_full_screen {
+    display: flex;
+    object-fit: fill;
+    
+    margin: 40px 0px;
+}
+
+
+
+.ABOUT_US {
+    text-align: center;
+    margin: 40px 40px;
+}
+
+
+
+
+
+
+
+.container {
+    display: block;
+    max-width: 1920px;
+    margin: auto;
+    padding: 60px;
+
+
+
+}
+
+.filters {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+
+.filter-btn {
+    background: none;
+    border: 1px solid #c3c3c3;
+    border-radius: 20px;
+    padding: 6px 16px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.filter-btn.active {
+    background: #000;
+    color: #fff;
+    border-color: #000;
+}
+
+.filter-btn:hover {
+    background: #000;
+    color: #fff;
+}
+
+/* Поле поиска */
+#search-input {
+    margin-left: auto;
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1px solid #c3c3c3;
+    font-size: 14px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+#search-input:focus {
+    border-color: #000;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px 20px;
+    grid-auto-rows: 300px;
+    /* каждая строка — 300px */
+    margin: 0px;
+    max-width: calc(600px * 5 + 30px * 4); /* 5 колонок + 4 промежутка */
+
+
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: left;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    justify-content: center;
+
+}
+
+.project img {
+    object-fit: contain;
+    overflow: hidden;
+    width: 100%;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.project p {
+    margin-top: 8px;
+    font-size: 16px;
+    line-height: 1.3;
+
+}
+
+.project span {
+    color: #666;
+    font-size: 14px;
+}
+
+
+
+.project video {
+    object-fit: contain;
+    overflow: hidden;
+    height: 100%;
+    width: 100%;
+    transition: transform 0.5s ease;
+    
+}
+
+
+.content_container {
+
+    align-content: center;
+    height: 250px;
+    overflow: hidden;
+}
+
+
+.project:hover {
+    
+}
+
+.project:hover img,
+.project:hover video {
+    transform:  scale(1.2);
+    transition: transform 0.5s ease; 
+}
+
+
+.gallery {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+
+ /* Добавляем стили для пагинации, если их нет в CSS */
+    .pagination-container {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin: 40px 0;
+    }
+    .page-num {
+      background: none;
+      border: 1px solid #c3c3c3;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "EB Garamond", serif;
+      font-size: 18px;
+      transition: all 0.3s ease;
+      cursor: none; /* Чтобы ваш кастомный курсор работал */
+    }
+    .page-num.active {
+      background: #000;
+      color: #fff;
+      border-color: #000;
+    }
